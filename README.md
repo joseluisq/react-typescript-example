@@ -4,6 +4,14 @@
 
 ## Usage
 
+via [Yarn](https://yarnpkg.com/)
+
+**Install**
+
+```sh
+yarn
+```
+
 **Development**
 
 ```sh
