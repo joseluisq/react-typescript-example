@@ -1,0 +1,49 @@
+{
+    "compileOnSave": false,
+    "include": [
+        "src",
+        "public"
+    ],
+    "exclude": [
+        "node_modules",
+        "src/*.spec.ts",
+        "dist"
+    ],
+    "compilerOptions": {
+        "outDir": "./",
+        "strict": true,
+        "declaration": true,
+        "sourceMap": false,
+        "pretty": true,
+        "moduleResolution": "Node",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "module": "CommonJS",
+        "target": "ES2015",
+        "noEmit": true,
+        "noLib": false,
+        "isolatedModules": false,
+        "preserveConstEnums": true,
+        "jsx": "react",
+        "typeRoots": [
+            "@types/node",
+            "src/typings"
+        ],
+        "lib": [
+            "ES2017",
+            "DOM",
+            "ESNext.AsyncIterable"
+        ],
+        "baseUrl": "./",
+        "paths": {
+            "~/*": [
+                "src/*"
+            ],
+            "~public": [
+                "public/*"
+            ]
+        }
+    }
+}
