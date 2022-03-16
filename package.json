@@ -3,7 +3,7 @@
     "version": "0.0.0",
     "private": true,
     "scripts": {
-        "dev": "yarn clean && parcel public/index.html",
+        "dev": "yarn clean && parcel serve --host=${HOST:=127.0.0.1} --port=${PORT:=1234} public/index.html",
         "prod": "yarn clean && parcel build --no-source-maps public/index.html",
         "clean": "rm -rf dist",
         "lint": "tslint --format stylish --project tsconfig.json"
